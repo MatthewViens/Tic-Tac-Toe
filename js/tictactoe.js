@@ -147,6 +147,7 @@
   // updateGame() is triggered whenever a tile is clicked.
   function updateGame(){
     // Mark tile claimed by current player.
+    this.style.backgroundImage = '';
     this.classList.add(currentPlayer.markClass);
     // Remove hover effect.
     this.removeEventListener('mouseover', addBackground);
